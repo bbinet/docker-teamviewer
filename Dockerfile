@@ -12,7 +12,7 @@ RUN dpkg --add-architecture i386 \
         libfreetype6:i386 libjpeg62:i386 libpng12-0:i386 libsm6:i386 \
         libxdamage1:i386 libxext6:i386 libxfixes3:i386 libxinerama1:i386 \
         libxrandr2:i386 libxrender1:i386 libxtst6:i386 zlib1g:i386 \
-    && curl -fSL -o /tmp/teamviewer_i386.tar.xz "https://download.teamviewer.com/download/version_12x/teamviewer_i386.deb" \
+    && curl -fSL -o /tmp/teamviewer_i386.tar.xz "http://download.teamviewer.com/download/teamviewer_i386.tar.xz" \
     && tar xf /tmp/teamviewer_i386.tar.xz -C /opt/ \
     && rm /tmp/teamviewer_i386.tar.xz \
     && rm -rf /var/lib/apt/lists/*
